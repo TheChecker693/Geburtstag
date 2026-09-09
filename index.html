@@ -128,10 +128,6 @@
 
 <div class="container">
 
-```
-<!-- ========================= -->
-<!-- STARTSEITE -->
-<!-- ========================= -->
 
 <section id="startseite" class="seite">
 
@@ -145,9 +141,7 @@
         Deshalb habe ich diese kleine Webseite
         extra für dich gemacht. ❤️
     </p>
-
-
-    <!-- HIER DEINE BILDQUELLE EINTRAGEN -->
+   
 
     <img
         src="https://tse2.mm.bing.net/th/id/OIP.FynhnUTz9GXH3qtFNoV0IgHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -167,9 +161,6 @@
         Jetzt gibt es noch ein paar Dinge
         zu entdecken... 👀🎁
     </p>
-
-
-    <!-- BUTTONS -->
 
     <div class="karten">
 
@@ -224,11 +215,6 @@
 </section>
 
 
-
-<!-- ========================= -->
-<!-- ÜBERRASCHUNG -->
-<!-- ========================= -->
-
 <section id="ueberraschung" class="seite versteckt">
 
     <div class="emoji">🎁</div>
@@ -265,11 +251,6 @@
 
 </section>
 
-
-
-<!-- ========================= -->
-<!-- ERINNERUNGEN -->
-<!-- ========================= -->
 
 <section id="erinnerungen" class="seite versteckt">
 
@@ -309,11 +290,6 @@
 
 </section>
 
-
-
-<!-- ========================= -->
-<!-- FÜR DICH -->
-<!-- ========================= -->
 
 <section id="fuerdich" class="seite versteckt">
 
@@ -356,21 +332,14 @@
     </div>
 
 </section>
-```
 
 </div>
-
-<!-- ========================= -->
-
-<!-- JAVASCRIPT -->
-
-<!-- ========================= -->
 
 <script>
 
     function zeigeSeite(seitenName) {
 
-        // Alle Seiten verstecken
+     
         document.querySelectorAll(".seite").forEach(function(seite) {
 
             seite.classList.add("versteckt");
@@ -378,7 +347,6 @@
         });
 
 
-        // Gewünschte Seite anzeigen
         document.getElementById(seitenName)
             .classList.remove("versteckt");
 
