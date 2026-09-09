@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🎂 Alles Gute zum Geburtstag!</title>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #4a2545;
+        background: linear-gradient(135deg, #ffd6e7, #e4d5ff);
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: 40px auto;
+    }
+
+    .seite {
+        background: white;
+        padding: 40px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        color: #d63384;
+        font-size: 48px;
+    }
+
+    h2 {
+        color: #9b59b6;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .hauptbild {
+        width: 70%;
+        max-width: 600px;
+        border-radius: 20px;
+        margin: 20px;
+    }
+
+    .karten {
+        display: flex;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .karte {
+        flex: 1;
+        padding: 25px;
+        background: white;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        transition: 0.3s;
+    }
+
+    .karte:hover {
+        transform: translateY(-8px);
+        background: #fff0f7;
+    }
+
+    .emoji {
+        font-size: 55px;
+    }
+
+    .zurueck {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 25px;
+        background: #d63384;
+        color: white;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .versteckt {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    @media (max-width: 700px) {
+
+        .karten {
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        .hauptbild {
+            width: 100%;
+        }
+
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<!-- ========================= -->
+<!-- STARTSEITE -->
+<!-- ========================= -->
+
+<section id="startseite" class="seite">
+
+    <h1>🎉 Alles Gute zum Geburtstag! 🎂</h1>
+
+    <p>
+        Heute ist dein ganz besonderer Tag! 🥳
+    </p>
+
+    <p>
+        Deshalb habe ich diese kleine Webseite
+        extra für dich gemacht. ❤️
+    </p>
+
+
+    <!-- HIER DEINE BILDQUELLE EINTRAGEN -->
+
+    <img
+        src="https://tse2.mm.bing.net/th/id/OIP.FynhnUTz9GXH3qtFNoV0IgHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+        alt="Geburtstagsbild"
+        class="hauptbild"
+    >
+
+
+    <p>
+        Ich wünsche dir ganz viel Glück,
+        Gesundheit, Erfolg und viele schöne
+        Momente im neuen Lebensjahr!
+    </p>
+
+
+    <p>
+        Jetzt gibt es noch ein paar Dinge
+        zu entdecken... 👀🎁
+    </p>
+
+
+    <!-- BUTTONS -->
+
+    <div class="karten">
+
+        <div class="karte" onclick="zeigeSeite('ueberraschung')">
+
+            <div class="emoji">🎁</div>
+
+            <h2>Überraschung</h2>
+
+            <p>
+                Hier wartet eine kleine
+                Überraschung auf dich!
+            </p>
+
+        </div>
+
+
+        <div class="karte" onclick="zeigeSeite('erinnerungen')">
+
+            <div class="emoji">📸</div>
+
+            <h2>Erinnerungen</h2>
+
+            <p>
+                Hier geht es um schöne
+                Erinnerungen.
+            </p>
+
+        </div>
+
+
+        <div class="karte" onclick="zeigeSeite('fuerdich')">
+
+            <div class="emoji">❤️</div>
+
+            <h2>Für dich</h2>
+
+            <p>
+                Hier wartet eine Nachricht
+                auf dich.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        🎈 🎂 🎁 🥳 🎉
+    </footer>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- ÜBERRASCHUNG -->
+<!-- ========================= -->
+
+<section id="ueberraschung" class="seite versteckt">
+
+    <div class="emoji">🎁</div>
+
+    <h1>Eine kleine Überraschung!</h1>
+
+    <p>
+       Die erste Seite hast du gefunden! 😎
+    </p>
+
+    <p>
+        Vielleicht hast du dich gefrat was als nächstes kommt, aber alles gut nichts schlimmes 
+    </p>
+
+    <p>
+        Die eigentliche Überraschung ist:
+        <strong>Du bist ein großartiger Mensch!</strong> ❤️
+    </p>
+
+    <p>
+        Und natürlich wünsche ich dir
+        einen wunderschönen Geburtstag!🎂
+
+        <strong>Und freu dich auf Freitag</strong>
+    </p>
+        
+    <div
+        class="zurueck"
+        onclick="zeigeSeite('startseite')">
+
+        ← Zurück
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- ERINNERUNGEN -->
+<!-- ========================= -->
+
+<section id="erinnerungen" class="seite versteckt">
+
+    <div class="emoji">📸</div>
+
+    <h1>Schöne Erinnerungen</h1>
+
+    <p>
+        Freundschaften bestehen aus vielen
+        kleinen und großen Momenten. ❤️
+    </p>
+
+    <p>
+        Aus gemeinsamen Erlebnissen,
+        lustigen Gesprächen und Momenten,
+        bei denen man einfach zusammen lachen muss. 😂
+    </p>
+
+    <p>
+        Ich hoffe, dass noch viele weitere
+        schöne Erinnerungen dazukommen!
+    </p>
+
+    <p>
+        <strong>
+            Auf viele weitere gemeinsame Momente! 🥳
+        </strong>
+    </p>
+
+    <div
+        class="zurueck"
+        onclick="zeigeSeite('startseite')">
+
+        ← Zurück
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- FÜR DICH -->
+<!-- ========================= -->
+
+<section id="fuerdich" class="seite versteckt">
+
+    <div class="emoji">❤️</div>
+
+    <h1>Eine Nachricht für dich</h1>
+
+    <p>
+        Heute geht es nicht nur darum,
+        dass du ein Jahr älter geworden bist. 🎂
+    </p>
+
+    <p>
+        Es geht auch darum, einen tollen
+        Menschen zu feiern.
+    </p>
+
+    <p>
+        Ich bin froh, dich als Freund zu haben
+        und hoffe, dass wir noch viele lustige,
+        schöne und verrückte Momente erleben.
+    </p>
+
+    <p>
+        Bleib genauso wie du bist! 😊
+    </p>
+
+    <p>
+        <strong>
+            Alles Gute zum Geburtstag! 🎉🎂❤️
+        </strong>
+    </p>
+
+    <div
+        class="zurueck"
+        onclick="zeigeSeite('startseite')">
+
+        ← Zurück
+
+    </div>
+
+</section>
+```
+
+</div>
+
+<!-- ========================= -->
+
+<!-- JAVASCRIPT -->
+
+<!-- ========================= -->
+
+<script>
+
+    function zeigeSeite(seitenName) {
+
+        // Alle Seiten verstecken
+        document.querySelectorAll(".seite").forEach(function(seite) {
+
+            seite.classList.add("versteckt");
+
+        });
+
+
+        // Gewünschte Seite anzeigen
+        document.getElementById(seitenName)
+            .classList.remove("versteckt");
+
+    }
+
+</script>
+
+</body>
+
+</html>
